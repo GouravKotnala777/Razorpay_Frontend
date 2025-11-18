@@ -18,7 +18,6 @@ function Slider({elements, slidesPerView=1, background}:SliderPropTypes) {
         <Swiper
             slidesPerView={slidesPerView}
             loop
-            autoplay={{delay:5000}}
             pagination={{clickable:true}}
             navigation
             modules={[Pagination, Navigation, Autoplay]}

@@ -11,7 +11,7 @@ function Slider2() {
     
     return(
         <>
-            <h1 className="text-4xl font-semibold mt-10 px-8 py-4">We have innovated at every instance, creating a disruption.</h1>        
+            <h1 className="text-4xl font-semibold mt-10 px-8 py-4 text_with_gradient2">We have innovated at every instance, creating a disruption.</h1>        
             <Slider elements={[
                 <div className="slider2 flex justify-between gap-8 px-8 py-4">
                     <div className="slider2_left flex flex-col gap-3 flex-3 justify-between p-4 [box-shadow:0px_0px_1px_2px_#00000010] rounded-sm">
@@ -39,6 +39,9 @@ function Slider2() {
                         </div>
                     </div>
                 </div>,
+
+
+
                 <div className="slider2 flex justify-between gap-8 px-8 py-4">
                     <div className="slider2_right flex flex-col gap-3 flex-1 justify-between p-4 [box-shadow:0px_0px_1px_2px_#00000010] rounded-sm">
                         <div className="text-[1rem] text-gray-500 font-semibold flex justify-between"><span>Line of Credit</span><span><MdOutlineShoppingCartCheckout /></span></div>
@@ -65,6 +68,9 @@ function Slider2() {
                         </div>
                     </div>
                 </div>,
+
+
+
                 <div className="slider2 flex justify-between gap-8 px-8 py-4">
                     <div className="slider2_left flex flex-col gap-3 flex-3 justify-between p-4 [box-shadow:0px_0px_1px_2px_#00000010] rounded-sm">
                         <div className="text-[1rem] text-gray-500 font-semibold flex justify-between"><span>Optimizer</span><span><TbRoute /></span></div>

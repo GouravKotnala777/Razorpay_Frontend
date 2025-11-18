@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { FOOTERITEMS } from "../../utils/constants";
-
+import "../../styles/components/utility.css";
 
 
 function Footer() {
     
     return(
         <footer className="flex justify-between flex-wrap p-10">
-            <div className="flex flex-col w-[30%] text-gray-500 text-[13px] gap-10">
+            <div className="footer_inner flex flex-col text-gray-500 max-w-[250px] text-[13px] gap-10">
                 <div className="w-[150px]"><img src="logo_large.jfif" alt="logo_large.jfif" /></div>
                 <p>Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
                 <p>RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
@@ -19,7 +19,7 @@ function Footer() {
                     <img src="certificate3.avif" alt="certificate3.avif" className="w-[70px]" />
                 </div>
             </div>
-            <div className="flex flex-col flex-wrap h-[150vh] gap-3 gap-x-20 text-[13px]">
+            <div className="flex flex-col flex-wrap h-[150vh] gap-3 text-[13px]">
                 {
                     FOOTERITEMS.map(({heading, items}) => (
                         <>

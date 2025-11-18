@@ -1,0 +1,15 @@
+.for_non_dev_heading{
+    font-size: 36px;
+}
+
+
+@media screen and (width <= 500px) {
+    .for_non_dev_heading{
+        font-size: 28px;
+    }
+}
+@media screen and (width <= 400px) {
+    .for_non_dev_heading{
+        font-size: 23px;
+    }
+}

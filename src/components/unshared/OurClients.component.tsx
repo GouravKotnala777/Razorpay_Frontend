@@ -97,13 +97,13 @@ const OurClients = () => {
                                     transition:"0.5s"
                                 }}
                                 onMouseOver={() => setHoveringClientDetail(index)}
-                                className="h-40 rounded-2xl p-10 ml-10 bg-white"
+                                className="clients_logos rounded-2xl p-10 ml-10 bg-white"
                             />
                         ))
                     }
                 </motion.div>
                 <div
-                    className="w-40 h-40 rounded-full z-10 glassBackground grid place-items-center sticky ml-200 mb-[-30px]">
+                    className="glass_disc w-40 h-40 rounded-full z-10 glassBackground grid place-items-center sticky mb-[-30px]">
                     <motion.div
                         animate={{
                             scale:[1.2, 1.2, 1.2, 1.6, 1.2, 1, 1.2, 1.2, 1.2, ]
@@ -145,7 +145,7 @@ const OurClients = () => {
                                     transition:"0.5s"
                                 }}
                                 onMouseOver={() => setHoveringClientDetail(index+10)}
-                                className="h-40 rounded-2xl p-10 ml-10 bg-white"
+                                className="clients_logos rounded-2xl p-10 ml-10 bg-white"
                             />
                         ))
                     }

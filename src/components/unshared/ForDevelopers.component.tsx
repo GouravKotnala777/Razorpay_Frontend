@@ -10,8 +10,8 @@ function ForDevelopers() {
     
 
     return(
-        <section className="box_with_animated_bg text-white p-10">
-            <div className="bg-linear-to-br from-[#000040eb] to-[#044000] p-10 rounded-lg">
+        <section className="for_dev box_with_animated_bg text-white">
+            <div className="for_dev_inner bg-linear-to-br from-[#000040eb] to-[#044000] rounded-lg">
                 <div className="for_dev_heading text-6xl font-semibold">Razorpay is built</div>
                 <div className="for_dev_heading text_with_gradient text-6xl font-semibold mt-2 text-green-500 italic">&lt;for developers by developers&gt;</div>
 
@@ -26,12 +26,12 @@ function ForDevelopers() {
                 </div>
 
                 <div className="for_dev_curl_set flex justify-between">
-                    <div className="border border-t-0 flex-2 text-4xl font-semibold p-10 rounded-b-lg">
+                    <div className="curl_left border border-t-0 flex-2 text-4xl font-semibold p-10 rounded-b-lg">
                         <div>Try it out</div>
                         <div className="flex items-center gap-2">for yourself <RxArrowBottomRight /></div>
                     </div>
-                    <div className="flex-1/3">
-                        <div id="curl_terminal" className="border border-[#ffffff23] rounded-3xl m-10 bg-[#ffffff20]">
+                    <div className="curl_right flex-1/3">
+                        <div id="curl_terminal" className="border border-[#ffffff23] rounded-3xl bg-[#ffffff20]">
                             <div id="curl_terminal_cover" className="w-full h-full text-[1.1rem] font-semibold grid place-items-center rounded-2xl">
                                 <div className="flex flex-col gap-4">
                                     <button className="bg-blue-600 cursor-pointer text-white rounded-sm px-3 py-2 hover:opacity-80">Take me to the Code</button>
@@ -50,7 +50,7 @@ function ForDevelopers() {
                                     <span>O</span>
                                 </div>
                             </div>
-                            <div id="curl_text" className="grid grid-cols-[30px_1fr] p-10 text-[12.8px]">
+                            <div id="curl_text" className="grid grid-cols-[30px_1fr] text-[12.8px]">
                                 <p>1</p><p>curl -X POST https://api.razorpay.com/v1/orders </p>
                                 <p>2</p><p>-U [YOUR_KEY_ID]:[YOUR_KEY_SECRET]</p>
                                 <p>3</p><p>-H <span className="text-[#77ff00]">'content-type:application/json'</span></p>

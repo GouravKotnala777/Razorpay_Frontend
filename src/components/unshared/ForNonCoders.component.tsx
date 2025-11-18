@@ -1,3 +1,4 @@
+import "../../styles/components/for_non_dev.component.css";
 import { CgArrowRight, CgArrowTopRight } from "react-icons/cg";
 import { CiCreditCard1 } from "react-icons/ci";
 import { GoFileZip } from "react-icons/go";
@@ -43,8 +44,8 @@ function ForNonCoders() {
     return(
         <section className="p-8 bg-gray-100">
             <div className="text-gray-400 text-[1.2rem]">"what html?"</div>
-            <div className="text-4xl font-semibold text-red-400 py-1">Not a developer?</div>
-            <div className="text-4xl font-semibold py-1">Our No-Code products have you covered</div>
+            <div className="for_non_dev_heading font-semibold text-red-400">Not a developer?</div>
+            <div className="for_non_dev_heading font-semibold">Our No-Code products have you covered</div>
             <div className="my-8"
                 style={{
                     margin:calculateColumns(width)===1?"auto auto":"32px 0"
@@ -52,7 +53,7 @@ function ForNonCoders() {
             >
 
                     <Slider elements={[
-                        <div className="slider2_right p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
+                        <div className="slider2_right mt-10 p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
                             <div className="text-[1rem] text-gray-500 flex justify-between"><span>Payment Links</span><span className="text-blue-600 text-2xl"><CiCreditCard1 /></span></div>
                             <div className="text-[1.2rem] font-semibold">
                                 <span>Accept payments instantly: </span>
@@ -64,7 +65,7 @@ function ForNonCoders() {
                                 <button className="flex items-center gap-1">Know More <CgArrowTopRight className="mt-1" /></button>
                             </div>
                         </div>,
-                        <div className="slider2_right p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
+                        <div className="slider2_right mt-10 p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
                             <div className="text-[1rem] text-gray-500 flex justify-between"><span>Payment Pages</span><span className="text-blue-600 text-2xl"><GoFileZip /></span></div>
                             <div className="text-[1.2rem] font-semibold">
                                 <span>Accept payments without </span>
@@ -76,7 +77,7 @@ function ForNonCoders() {
                                 <button className="flex items-center gap-1">Know More <CgArrowTopRight className="mt-1" /></button>
                             </div>
                         </div>,
-                        <div className="slider2_right p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
+                        <div className="slider2_right mt-10 p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
                             <div className="text-[1rem] text-gray-500 flex justify-between"><span>Payment Buttons</span><span className="text-blue-600 text-2xl"><RxRadiobutton /></span></div>
                             <div className="text-[1.2rem] font-semibold">
                                 <span>Effortlessly </span>
@@ -88,7 +89,7 @@ function ForNonCoders() {
                                 <button className="flex items-center gap-1">Know More <CgArrowTopRight className="mt-1" /></button>
                             </div>
                         </div>,
-                        <div className="slider2_right p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
+                        <div className="slider2_right mt-10 p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
                             <div className="text-[1rem] text-gray-500 flex justify-between"><span>Invoices</span><span className="text-blue-600 text-2xl"><IoFileTrayFullOutline /></span></div>
                             <div className="text-[1.2rem] font-semibold">
                                 <span>Generate GST invoices, </span>
@@ -100,7 +101,7 @@ function ForNonCoders() {
                                 <button className="flex items-center gap-1">Know More <CgArrowTopRight className="mt-1" /></button>
                             </div>
                         </div>,
-                        <div className="slider2_right p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
+                        <div className="slider2_right mt-10 p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
                             <div className="text-[1rem] text-gray-500 flex justify-between"><span>QR Code</span><span className="text-blue-600 text-2xl"><IoQrCodeOutline /></span></div>
                             <div className="text-[1.2rem] font-semibold">
                                 <span>Grow your business with your own, </span>
@@ -112,7 +113,7 @@ function ForNonCoders() {
                                 <button className="flex items-center gap-1">Know More <CgArrowTopRight className="mt-1" /></button>
                             </div>
                         </div>,
-                        <div className="slider2_right p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
+                        <div className="slider2_right mt-10 p-4 [box-shadow:2px_2px_6px_2px_#00000010] rounded-sm w-[300px] bg-white">
                             <div className="text-[1rem] text-gray-500 flex justify-between"><span>Subscriptions</span><span className="text-blue-600 text-2xl"><IoCheckmarkDone /></span></div>
                             <div className="text-[1.2rem] font-semibold">
                                 <span>Automate subscriptions: </span>

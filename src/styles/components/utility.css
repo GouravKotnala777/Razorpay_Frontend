@@ -47,6 +47,18 @@
     background-clip: text;
     color: transparent;
 }
+.text_with_gradient2{
+    background: linear-gradient(to bottom, rgba(0, 47, 255, 0.274), rgb(0, 51, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.glass_disc{
+    margin-left: 70%;
+}
+.clients_logos{
+    height: 160px;
+}
 .hover_raise{
     cursor: pointer;
     &:hover{
@@ -64,9 +76,18 @@
     color: white;
 }
 
+
 @media screen and (width <= 1180px) {
     #quick_start{
         display: none;
+    }
+}
+@media screen and (width <= 580px) {
+    .glass_disc{
+        margin-left: 55%;
+    }
+    .clients_logos{
+        height: 130px;
     }
 }
 /*.curl_language_button{

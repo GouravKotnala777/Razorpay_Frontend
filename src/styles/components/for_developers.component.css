@@ -1,7 +1,11 @@
 @import "./utility.css";
 
+.for_dev,.for_dev_inner{
+    padding: 40px;
+}
 #curl_terminal{
     position: relative;
+    margin: 40px;
     &:hover{
         #curl_terminal_cover{
             transform: scaleY(1.1);
@@ -10,6 +14,9 @@
         }
     }
     
+}
+#curl_text{
+    padding: 40px;
 }
 #curl_terminal_cover{
     position: absolute;
@@ -20,11 +27,28 @@
 }
 
 @media screen and (width <= 1040px) {
+    #curl_terminal{
+        margin: 20px;
+    }
+    #curl_text{
+        padding: 20px;
+    }
     .for_dev_heading{
         font-size: 40px;
     }
 }
+@media screen and (width <= 910px) {
+    .curl_left{
+        flex: 1;
+    }
+    .curl_right{
+        flex: 3;
+    }
+}
 @media screen and (width <= 780px) {
+    #curl_terminal{
+        
+    }
     .for_dev_heading{
         font-size: 40px;
     }
@@ -48,4 +72,16 @@
         padding: 7px;
         font-size: 11px;
     }
+}
+@media screen and (width <= 500px) {
+    .for_dev,.for_dev_inner{
+        padding: 10px;
+    }
+    #curl_terminal{
+        margin: 12px 4px 5px 4px;
+        border-radius: 8px;
+    }
+    .curl_right{
+    }
+
 }

@@ -19,4 +19,15 @@
     .slider2{
         flex-direction: column;
     }
+    .slider2_left_headings{
+        font-size: 25px;
+    }
+}
+@media screen and (width <= 600px) {
+    .slider2{
+        flex-direction: column;
+    }
+    .slider2_left_headings{
+        font-size: 21px;
+    }
 }
