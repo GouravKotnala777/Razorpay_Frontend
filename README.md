@@ -171,3 +171,165 @@ function getAllBrandImages() {
 
 
 
+
+
+
+
+# Landing Page For Razorpay Clone
+A modern and responsive Razorpay-style landing page built using **React**, **Tailwind CSS**, custom components, animations, and sliders.  
+The UI is clean, smooth, and inspired by high-quality fintech websites.
+
+[🎉Live Demo](https://razorpay-frontend.vercel.app)
+
+## 📜 Table Of Content
+- About
+- Features
+- TechStack
+- Installation
+- Environment Variables
+- Usage
+- API Documentation
+- Project Structure
+
+## 🔧 Features
+
+- Login/Registration Page
+- Home Page (list of all plots with due EMI)
+- Message to clients for due EMIs
+- Single Item Page (details of single plot/client/EMI)
+- Sites Page (list of all sites)
+- Slips (list of all slips)
+- Agents Page (all agent's sold area data)
+- Single Site Page (details of single site and it's all plots)
+- Site canvas chart
+- Client EMI canvas chart
+- Logout Page
+
+
+## 🚀 Tech Stack
+
+- **Frontend**: React + Typescript + Vite
+- **Others**: React-Router-Dom, React-Icons
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/razorpay-frontend
+cd razorpay-frontend
+
+# client setup
+cd client
+npm install
+# Create a .env file and add environment variables like given in bellow section:
+npm run dev
+```
+
+## 📂 Project Structure (frontend)
+```bash
+├── client/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── CreateFormPanel.tsx
+│   │   │   ├── DataFlow.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── ListHeading.tsx
+│   │   │   ├── ListItem.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── ProtectedRoute.tsx
+│   │   │   ├── SearchComponent.tsx
+│   │   │   └── Spinner.tsx
+│   │   ├── pages/
+│   │   │   ├── Agents.tsx
+│   │   │   ├── Home.tsx
+│   │   │   ├── Login.tsx
+│   │   │   ├── MyProfile.tsx
+│   │   │   ├── Register.tsx
+│   │   │   ├── SinglePlot.tsx
+│   │   │   ├── SingleSite.tsx
+│   │   │   ├── Sites.tsx
+│   │   │   └── Slips.tsx
+│   │   ├── shared/
+│   │   │   ├── SharedComponents.tsx
+│   │   ├── styles/
+│   │   │   ├── components/
+│   │   │   │   ├── header.component.scss
+│   │   │   │   ├── list_item.scss
+│   │   │   │   ├── modal.scss
+│   │   │   │   └── search_component.scss
+│   │   │   ├── pages/
+│   │   │   │   ├── agents.scss
+│   │   │   │   ├── client.scss
+│   │   │   │   ├── home.scss
+│   │   │   │   ├── plots.scss
+│   │   │   │   ├── register.scss
+│   │   │   │   ├── single_item_page.scss
+│   │   │   │   ├── sites.scss
+│   │   │   │   ├── slips.scss
+│   │   │   │   └── users.scss
+│   │   │   ├── shared/
+│   │   │   │   ├── list.scss
+│   │   │   │   └── table.scss
+│   │   │   ├── app.scss
+│   │   │   ├── shared_components.scss
+│   │   │   └── utils.scss
+│   │   ├── utils/
+│   │   │   ├── constants.ts
+│   │   │   ├── hooks.ts
+│   │   │   ├── types.ts
+│   │   │   └── utilFunctions.ts
+│   │   ├── App.tsx
+│   │   ├── Context.tsx
+│   │   ├── main.tsx
+│   │   └── vite-env.d.ts
+│   ├── .env
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   ├── tsconfig.node.json
+│   ├── vercel.json
+│   ├── vite.config.ts
+│   └── tsconfig.json
+```
+
+## 🙋‍♂️ Author
+Gourav Kotnala
+[PortFolio](https://gouravkotnala777.github.io/portfolio-1/)
+[GitHub](https://github.com/GouravKotnala777)
+[LinkedIn](https://www.linkedin.com/in/gourav-kotnala-003427295)
+
+---
+
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
