@@ -10,10 +10,10 @@ interface CartPropTypes{
     isHoverActive?:boolean;
 }
 
-function Card({Icon, heading, para, buttonElement, isHoverActive}:CartPropTypes) {
+function Card({Icon, heading, para, buttonElement}:CartPropTypes) {
     
     return(
-        <div className="hover_raise flex flex-col text-[17.6px] gap-1 p-2 rounded-[8px]">
+        <div className="hover_raise flex flex-col text-[17.6px] gap-1 p-2 rounded-lg">
             <div>{Icon&&<Icon />}</div>
             <div className="font-semibold">{heading}</div>
             <div className="text-[#ffffff89]">{para}</div>
