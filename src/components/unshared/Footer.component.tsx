@@ -6,7 +6,7 @@ import "../../styles/components/utility.css";
 function Footer() {
     
     return(
-        <footer className="flex justify-between flex-wrap p-10">
+        <footer className="footer flex justify-between flex-wrap">
             <div className="footer_inner flex flex-col text-gray-500 max-w-[250px] text-[13px] gap-10">
                 <div className="w-[150px]"><img src="logo_large.jfif" alt="logo_large.jfif" /></div>
                 <p>Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
@@ -19,7 +19,7 @@ function Footer() {
                     <img src="certificate3.avif" alt="certificate3.avif" className="w-[70px]" />
                 </div>
             </div>
-            <div className="flex flex-col flex-wrap h-[150vh] gap-3 text-[13px]">
+            <div className="flex flex-col flex-wrap h-[200vh] gap-3 text-[13px]">
                 {
                     FOOTERITEMS.map(({heading, items}) => (
                         <>

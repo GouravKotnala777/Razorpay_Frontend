@@ -75,7 +75,9 @@
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     color: white;
 }
-
+.footer{
+    padding: 40px;
+}
 
 @media screen and (width <= 1180px) {
     #quick_start{
@@ -88,6 +90,9 @@
     }
     .clients_logos{
         height: 130px;
+    }
+    .footer{
+        padding: 10px;
     }
 }
 /*.curl_language_button{
