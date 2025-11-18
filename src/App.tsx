@@ -35,7 +35,7 @@ function App() {
       <Header isHeaderVisible={isHeaderVisible} isHamActive={isHamActive} setIsHamActive={setIsHamActive} glassSurface="5px" />
       <Sidebar isHamActive={isHamActive} setIsHamActive={setIsHamActive} />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   )
