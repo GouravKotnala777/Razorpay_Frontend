@@ -1,0 +1,51 @@
+@import "./utility.css";
+
+#curl_terminal{
+    position: relative;
+    &:hover{
+        #curl_terminal_cover{
+            transform: scaleY(1.1);
+            transform-origin: bottom;
+            transition: 0.3s ease;
+        }
+    }
+    
+}
+#curl_terminal_cover{
+    position: absolute;
+    top:0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    transform: scaleY(0);
+}
+
+@media screen and (width <= 1040px) {
+    .for_dev_heading{
+        font-size: 40px;
+    }
+}
+@media screen and (width <= 780px) {
+    .for_dev_heading{
+        font-size: 40px;
+    }
+    .for_dev_cards_cont{
+        flex-direction: column;
+        border-bottom-right-radius: 0px;
+    }
+    .for_dev_curl_set{
+        flex-direction: column;
+    }
+}
+@media screen and (width <= 640px) {
+    #curl_terminal{
+        margin: 20px;
+        border-radius: 8px;
+    }
+    #curl_lang_btn{
+        border-radius: 4px;
+    }
+    #curl_text{
+        padding: 7px;
+        font-size: 11px;
+    }
+}

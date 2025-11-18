@@ -1,0 +1,96 @@
+#header{
+    transition: 0.6s ease;
+}
+.resources_item{
+    position: relative;
+    display: flex;
+    &:hover{
+        border-left: 1px solid rgba(0, 0, 0, 0.734);
+        .resources_item_left_part, .resources_item_right_part{
+            display: block;
+        }
+        .resources_item_left_part{
+            box-shadow: -1px 0 5px 0.5px rgba(128, 128, 128, 0.679);
+        }
+    }
+    .resources_item_left_part{
+        position: absolute;
+        border-left: 0px solid rgb(19, 139, 244);
+        border-right: 4px solid rgb(19, 139, 244);
+        top: 10%;
+        left: 0;
+        width: 2px;
+        height: 80%;
+        border-radius: 0 50% 50% 0;
+        display: none;
+    }
+    .resources_item_middle_part{
+        margin-left: 10px;
+    }
+    .resources_item_right_part{
+        margin-left: auto;
+        display: none;
+    }
+
+}
+/*.resources_item::before{
+    content: "";
+    border-left: 1px solid red;
+    border-right: 3px solid red;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    border-radius: 0 50% 50% 0;
+}
+.resources_item::after{
+    content: ">";
+    top: 0;
+    right: -100%;
+    width: 100px;
+    height: 100%;
+    border-radius: 0 50% 50% 0;
+    margin-left: 100px;
+}*/
+
+#payments,
+#banking,
+#payroll,
+#engage,
+#partners,
+#resources,
+#pricing,
+#care_lang > #customer_care,
+#care_lang > #languages{
+    .sheet{
+        display: none;
+    }
+    .paper_piece{
+        display: none;
+    }
+    &:hover{
+       .sheet {
+        display: block;
+       }
+       .paper_piece {
+        display: block;
+       }
+    }
+}
+
+
+
+@media screen and (width <= 1080px) {
+    .header_logo_sec{
+
+    }
+    .header_nav_sec{
+        display: none;
+    }
+    .header_care_lang_sec{
+        display: none;
+    }
+    .ham_cont{
+        display: block;
+    }
+}

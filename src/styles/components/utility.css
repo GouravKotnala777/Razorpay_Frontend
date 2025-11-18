@@ -1,0 +1,108 @@
+@property --gradient-angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+
+.box_with_animated_bg{
+    border-radius:8px;
+    background:rgba(255, 255, 255, 0.232);
+    position: relative;
+}
+.box_with_animated_bg::before, .box_with_animated_bg::after{
+    position: absolute;
+    content:"";
+    inset: -5px;
+    background: conic-gradient(from var(--gradient-angle), #000063eb, #066000, #000093eb, #066000, #000063eb);
+    border-radius: inherit;
+    animation: rotation 5s linear infinite;
+    z-index:-1;
+}
+.box_with_animated_bg::after{
+    filter:blur(1px);
+}
+
+.img_with_animated_bg{
+    border-radius:8px;
+    background:rgba(255, 255, 255, 0.232);
+    position: relative;
+}
+.img_with_animated_bg::before, .img_with_animated_bg::after{
+    position: absolute;
+    content:"";
+    inset: -3px;
+    background: conic-gradient(from var(--gradient-angle), rgba(0, 0, 0), rgba(0,0, 0), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),  white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0,0, 0), rgba(0, 0, 0));
+    border-radius: inherit;
+    animation: rotation 5s linear infinite;
+    z-index:-1;
+}
+.img_with_animated_bg::after{
+    filter:blur(1px);
+}
+
+
+.text_with_gradient{
+    background: linear-gradient(180deg, rgb(0, 84, 0), rgb(0, 209, 0), rgb(0, 84, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.hover_raise{
+    cursor: pointer;
+    &:hover{
+        box-shadow:0px 0px 10px 0.5px #000;
+        transform: scale(1.03);
+        transition: 0.3s ease;
+    }
+}
+.glassBackground{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border:1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    color: white;
+}
+
+@media screen and (width <= 1180px) {
+    #quick_start{
+        display: none;
+    }
+}
+/*.curl_language_button{
+    border: 2px solid red;
+    transition: 0.3s;
+    &:hover{
+        .curl_selected_language{
+            
+        }
+        .curl_change_l_para{
+            transform: scaleX(0);
+        }
+        .curl_languages{
+            transform: scaleX(1);
+        }
+    }
+    .curl_selected_language{
+        transition: 0.3s;
+        width: max;
+        transform-origin: left;
+    }
+    .curl_change_l_para{
+        transition: 0.3s;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    .curl_languages{
+        transition: 0.3s;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}*/
+
+
+
+@keyframes rotation{
+    0%{--gradient-angle:0deg;}
+    100%{--gradient-angle:360deg;}
+}

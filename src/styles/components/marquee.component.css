@@ -1,0 +1,47 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.marquee-track {
+  display: inline-flex;
+  gap: 40px;
+  animation: scroll 12s linear infinite;
+  font-size: 2rem;   /* base size */
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50.5%); }
+}
+
+/* ⭐ Mobile phones */
+@media (max-width: 600px) {
+  .marquee-track {
+    font-size: 1.2rem;   /* smaller text */
+    gap: 20px;           /* smaller gap */
+    animation-duration: 15s; /* slow on smaller screen */
+  }
+}
+
+/* ⭐ Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .marquee-track {
+    font-size: 1.5rem;
+    gap: 30px;
+    animation-duration: 14s;
+  }
+}
+
+/* ⭐ Large screens */
+@media (min-width: 1025px) {
+  .marquee-track {
+    font-size: 2rem;
+    gap: 40px;
+    animation-duration: 18s;
+  }
+}

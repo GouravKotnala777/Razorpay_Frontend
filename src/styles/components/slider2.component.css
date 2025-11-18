@@ -1,0 +1,22 @@
+
+
+.slider2_left_headings{
+    font-size: 48px;
+}
+
+@media screen and (width <= 1030px) {
+    .slider2_left{
+        flex: 2;
+    }
+    .slider2_right{
+        flex: 1;
+    }
+    .slider2_left_headings{
+        font-size: 30px;
+    }
+}
+@media screen and (width <= 800px) {
+    .slider2{
+        flex-direction: column;
+    }
+}
